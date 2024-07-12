@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mental Health Assessment</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Mental Health Assessment</h1>
+    <form action="/assessment" method="post">
+        <input type="hidden" name="username" value="<%= username %>">
+        <label for="score">On a scale of 1-10, how do you feel today?</label>
+        <input type="number" id="score" name="score" min="1" max="10" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
